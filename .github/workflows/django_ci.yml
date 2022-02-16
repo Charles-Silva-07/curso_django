@@ -41,7 +41,7 @@ jobs:
         pipenv install --deploy --dev
     - name: Test with pytest
       run: |
-        pipenv run pytest --cov=pypro
+        pipenv run pytest
     - name: Relatório Coverage
       env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
