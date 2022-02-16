@@ -6,6 +6,18 @@ pip install pipenv = instala o pipenv
 
 pipenv install django = instal o Django
 
+django-admin = serve para conferir os comandos
+
+django-admin startproject ' nome do projeto ' e um spaço depois ponto PARA criar o arquivo manage.py na raiz do projeto
+
+python manage.py --help = serve para saber os comandos
+
+python manage.py runserver = RODA O SERVIDOR local e CTRLC PARA fechar
+
+OBS: ALIAS LINUX mng='python $VIRTUALENV_ENV/../manage.py'
+
+windows criar um arquivo mng.bat e coloca  @python "%VIRTUAL_ENV%\..\manage.py" %*: PRONT AGORA E SO rodar mng runserver
+
 pipenv install --dev flake8 = instala o flake8 para uso de desenvolvimeto
 
 rm -rf .venv = REMOVE o ambiente virtual .venv
@@ -30,6 +42,8 @@ VARIAVEIS GLOBAL PARA SETAR
 RODAR UM COMANDO ISOLADO
 
 pipenv run flake8 = ele vai ativar o virtualen depois vai rodar o comando ao finalizar ele deaativa
+
+
 
 
 
