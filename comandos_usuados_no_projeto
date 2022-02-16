@@ -14,8 +14,10 @@ python manage.py --help = serve para saber os comandos
 
 python manage.py runserver = RODA O SERVIDOR local e CTRLC PARA fechar
 
-OBS: ALIAS LINUX mng='python $VIRTUALENV_ENV/../manage.py'
+OBS: ALIAS LINUX
+mng='python $VIRTUALENV_ENV/../manage.py'
 
+ALIAS
 windows criar um arquivo mng.bat e coloca  @python "%VIRTUAL_ENV%\..\manage.py" %*: PRONT AGORA E SO rodar mng runserver
 
 pipenv install --dev flake8 = instala o flake8 para uso de desenvolvimeto
@@ -57,6 +59,14 @@ heroku config:set DISABLE_COLLECTSTATIC=1
 heroku open
 
 heroku open = PARA ABRIR NOSSA APLICAÇÃO
+
+
+CRIANDO APPS NO DJANGO
+
+mng startapp base
+
+python ../manage.py startapp
+
 
 
 
