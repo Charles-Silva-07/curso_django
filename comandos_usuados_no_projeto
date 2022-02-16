@@ -1,0 +1,42 @@
+Verificar a versão de python global
+
+pyenv global = usado no Linux
+
+pip install pipenv = instala o pipenv
+
+pipenv install django = instal o Django
+
+pipenv install --dev flake8 = instala o flake8 para uso de desenvolvimeto
+
+rm -rf .venv = REMOVE o ambiente virtual .venv
+
+pipenv sync = instalar dependencias que se encontra apenas no arquivo lock
+
+pipenv sync = Apenas as dependencias de desenvolvimento ai ele vai pegar todas que se encontra no aquivo lock e instalar
+
+
+ATIVAR O AMBIENTE VIRTUAL
+
+linux = source .venv/bin/activate  ou usar o pipenv shell
+
+Windowns = pipenv shell
+
+pip freeze = VER as dependencias instaladas
+
+VARIAVEIS GLOBAL PARA SETAR
+    - PIPENV_VENV_IN_PROJECT valor 1 = CRIA o ambiente virtual dentro do projeto
+    - PIPENV_IGNORE_VIRTUALENVS valor 1 = Ignora qualquer virtualenv que ja tenha sido criado
+
+RODAR UM COMANDO ISOLADO
+
+pipenv run flake8 = ele vai ativar o virtualen depois vai rodar o comando ao finalizar ele deaativa
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+# Aquivos que possui nossas dependências
+requirements:
+  - Pipfile
+  - Pipfile.lock
