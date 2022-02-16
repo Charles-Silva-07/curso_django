@@ -1,3 +1,5 @@
+name: Django application
+
 on:
   push:
     branches: [ main ]
@@ -33,7 +35,6 @@ jobs:
     - name: Copiar Configurações .env
       run: |
           cp contrib/env-sample .env
-
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
@@ -41,11 +42,9 @@ jobs:
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
-
     - name: Test with pytest
       run: |
         pipenv run pytest --no-migrations --cov=pypro
-
     - name: Relatório Coverage
       env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
