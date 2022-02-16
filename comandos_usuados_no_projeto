@@ -26,6 +26,7 @@ pipenv sync = instalar dependencias que se encontra apenas no arquivo lock
 
 pipenv sync = Apenas as dependencias de desenvolvimento ai ele vai pegar todas que se encontra no aquivo lock e instalar
 
+pipenv install gunicorn = dependência para usar servidor de aplicação com heroku
 
 ATIVAR O AMBIENTE VIRTUAL
 
@@ -43,6 +44,12 @@ RODAR UM COMANDO ISOLADO
 
 pipenv run flake8 = ele vai ativar o virtualen depois vai rodar o comando ao finalizar ele deaativa
 
+
+heroku apps: create <sua_app>
+git remote -v
+git push heroku <branch_local>:master -f
+heroku config:set DISABLE_COLLECTSTATIC=1
+heroku open
 
 
 
