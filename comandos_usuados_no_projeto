@@ -67,6 +67,16 @@ mng startapp base
 
 python ../manage.py startapp
 
+# PYTESTE DJANGO
+
+pipenv install pytest-django
+
+# COBERTURA DE TESTES
+
+pipenv install --dev 'pytest-cov' codecov
+
+pipenv run pytest --cov=pypro gerar as coberturas de teste dentro da pasta do projeto
+
 
 
 

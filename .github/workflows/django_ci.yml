@@ -36,9 +36,11 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install pipenv
+        pípenv pytest
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
+        pipenv pytest --cov=pypro
 
     - name: Relatório Coverage
       env:
