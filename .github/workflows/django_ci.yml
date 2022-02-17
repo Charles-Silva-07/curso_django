@@ -41,6 +41,7 @@ jobs:
         pipenv sync -d
         pipenv install --deploy --dev
         pipenv pytest --cov=pypro
+        cp contrib/env-sample .env
 
     - name: Relatório Coverage
       env:

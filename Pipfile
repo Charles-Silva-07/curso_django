@@ -12,6 +12,8 @@ codecov = "*"
 pytest-django = "*"
 requests = "*"
 virtualenv = "*"
+pytest-cov = "*"
+python-decouple = "*"
 
 [dev-packages]
 flake8 = "*"

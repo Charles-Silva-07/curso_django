@@ -77,6 +77,12 @@ pipenv install --dev 'pytest-cov' codecov
 
 pipenv run pytest --cov=pypro gerar as coberturas de teste dentro da pasta do projeto
 
+# CONFIGURAÇÃO PYTHON DECOUPLE
+
+pipenv install 'python-decouple'
+heroku config:set DEBUG=False
+
+
 
 
 
