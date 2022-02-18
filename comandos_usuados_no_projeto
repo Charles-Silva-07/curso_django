@@ -83,6 +83,14 @@ pipenv install 'python-decouple'
 
 heroku config:set DEBUG=False -a django-charles
 
+heroku config   = serve para conferir as variaveis de ambite
+
+criado app django-0147
+nova
+
+git push heroku 10:master -f
+serve para enviar via terminal para o heroku
+
 
 
 
