@@ -40,10 +40,10 @@ jobs:
         pipenv install codecov
         pipenv install --deploy --dev
         pipenv run pytest --cov=pypro
-        pipenv pytest --cov=pypro
         cp contrib/env-sample .env
 
     - name: Relatório Coverage
       env:
-          CODECOV_TOKEN: 'e9e64690-7443-4174-b56e-23b4137376a1'
+        CODECOV_TOKEN: 'e9e64690-7443-4174-b56e-23b4137376a1'
+      run: |
         pipenv run codecov
