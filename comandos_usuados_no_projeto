@@ -65,7 +65,7 @@ CRIANDO APPS NO DJANGO
 
 mng startapp base
 
-python ./manage.py startapp
+python ../manage.py startapp
 
 # PYTESTE DJANGO
 
