@@ -36,7 +36,7 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install pipenv
-        pipenv pytest
+        
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
@@ -47,5 +47,5 @@ jobs:
     - name: Relatório Coverage
       env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-      run: |
+
         pipenv run codecov
