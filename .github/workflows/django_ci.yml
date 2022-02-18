@@ -36,7 +36,7 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install pipenv
-        pípenv pytest
+        pipenv pytest
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
@@ -48,3 +48,4 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         pipenv run codecov
+        pipenv run pytest --cov=pypro

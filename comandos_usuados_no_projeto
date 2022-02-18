@@ -65,7 +65,7 @@ CRIANDO APPS NO DJANGO
 
 mng startapp base
 
-python ../manage.py startapp
+python ./manage.py startapp
 
 # PYTESTE DJANGO
 
@@ -80,7 +80,8 @@ pipenv run pytest --cov=pypro gerar as coberturas de teste dentro da pasta do pr
 # CONFIGURAÇÃO PYTHON DECOUPLE
 
 pipenv install 'python-decouple'
-heroku config:set DEBUG=False
+
+heroku config:set DEBUG=False -a django-charles
 
 
 
