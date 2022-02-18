@@ -42,8 +42,8 @@ jobs:
         pipenv run pytest --cov=pypro
         pipenv pytest --cov=pypro
         cp contrib/env-sample .env
-
-    - name: Relatório Coverage
+        
+    - name: Relatorio Coverage
       env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        pipenv run codecov
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          pipenv run codecov
