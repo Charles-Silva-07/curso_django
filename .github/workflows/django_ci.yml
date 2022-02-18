@@ -40,6 +40,7 @@ jobs:
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
+        pipenv run pytest --cov=pypro
         pipenv pytest --cov=pypro
         cp contrib/env-sample .env
 
@@ -48,4 +49,3 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         pipenv run codecov
-        pipenv run pytest --cov=pypro
