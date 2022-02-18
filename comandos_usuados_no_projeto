@@ -91,6 +91,9 @@ nova
 git push heroku 10:master -f
 serve para enviar via terminal para o heroku
 
+Primeiro forc push
+
+
 
 
 
