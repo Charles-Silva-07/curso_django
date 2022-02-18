@@ -86,6 +86,7 @@ heroku config:set DEBUG=False -a django-charles
 heroku config   = serve para conferir as variaveis de ambite
 
 criado app django-0147
+nova
 
 
 
