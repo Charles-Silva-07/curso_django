@@ -45,5 +45,5 @@ jobs:
 
     - name: Relatório Coverage
       env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          CODECOV_TOKEN: 'e9e64690-7443-4174-b56e-23b4137376a1'
         pipenv run codecov
