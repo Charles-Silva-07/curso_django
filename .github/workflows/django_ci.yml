@@ -31,6 +31,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+    - name: cp contrib/env-sample .env
+      run: |
+        cp contrib/env-sample .env
 
     - name: Install dependencies
       run: |
@@ -40,7 +43,7 @@ jobs:
         pipenv install codecov
         pipenv install --deploy --dev
         pipenv run pytest --cov=pypro
-        cp contrib/env-sample .env
+        
 
     - name: Relatório Coverage
       env:
