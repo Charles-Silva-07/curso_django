@@ -28,17 +28,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: 3.9
 
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install pipenv
-        
-        pipenv install codecov
+        pip install -q pipenv codecov flake8
         pipenv sync -d
+        pipenv install codecov
         pipenv install --deploy --dev
         pipenv run pytest --cov=pypro
         pipenv pytest --cov=pypro
@@ -47,5 +46,4 @@ jobs:
     - name: Relatório Coverage
       env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
         pipenv run codecov
