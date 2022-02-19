@@ -95,6 +95,11 @@ Primeiro forc push
 
 heroku config -a django-0147
 
+FUNÇÃO SECRETA DO DJANGO CHAVE RANDOMICA = from django.core.management.utils import get_random_secret_key
+get_random_secret_key()
+
+CHAVE TB = '0pzk4-ph91=f+n%-771mk$c=@m1(=8^ivf7g+sjnm=s(#)s29@'
+
 
 
 
