@@ -121,6 +121,18 @@ mng collectstatic --no-input
 COLLECTFAST_ENABLED = False
 COLLECTFAST_ENABLED = True quando estiver ativa
 
+GERAR AS MIGRAÇÕES
+
+COMANDO = mng makemigrations base
+
+VERIFICAR AS MIGRAÇÕES
+
+COMANDO = mng showmigrations
+
+CONEXÃO COM O BANCO DE DADOS
+
+mng migrate
+CRIAR SUPER USUARIO = mng createsuperuser charlleshp@hotmail.com
 
 
 
