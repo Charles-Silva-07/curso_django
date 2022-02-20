@@ -14,6 +14,7 @@ requests = "*"
 virtualenv = "*"
 pytest-cov = "*"
 python-decouple = "*"
+dj-database-url = "*"
 
 [dev-packages]
 flake8 = "*"
