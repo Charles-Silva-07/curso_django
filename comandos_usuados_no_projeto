@@ -42,6 +42,8 @@ Windowns = pipenv shell
 
 pip freeze = VER as dependencias instaladas
 
+pipenv update -d = atualiza as dependencias
+
 VARIAVEIS GLOBAL PARA SETAR
     - PIPENV_VENV_IN_PROJECT valor 1 = CRIA o ambiente virtual dentro do projeto
     - PIPENV_IGNORE_VIRTUALENVS valor 1 = Ignora qualquer virtualenv que ja tenha sido criado
