@@ -44,6 +44,7 @@ jobs:
         pipenv install --deploy --dev
         pipenv run pytest --cov=pypro
         
+        
 
     - name: Relatório Coverage
       env:
