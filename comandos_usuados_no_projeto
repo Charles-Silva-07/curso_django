@@ -100,7 +100,21 @@ Primeiro forc push
 
 heroku config -a django-0147
 
+heroku config:set -a django-0147
 
+DESABILITAMOS O DISABLE_COLLECTSTATIC NO HEROKU
+
+comando = heroku config -a django-0147 DISABLE_COLLECTSTATIC
+
+importamos para o heroku as chaves de segurança do aws que se encontra no .env
+
+heroku config:set -a django-0147 AWS_ACCESS_KEY_ID=AKIASUGGP7B5K7EVDOVV
+heroku config:set -a django-0147 AWS_SECRET_ACCESS_KEY=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
+heroku config:set -a django-0147 AWS_STORAGE_BUCKET_NAME=cursodjango1
+
+Enviamos a coleta statica
+
+mng collectstatic --no-input
 
 
 
