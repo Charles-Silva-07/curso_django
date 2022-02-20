@@ -134,6 +134,9 @@ CONEXÃO COM O BANCO DE DADOS
 mng migrate
 CRIAR SUPER USUARIO = mng createsuperuser charlleshp@hotmail.com
 
+PARA PODER HEROKU RODAR NOSSA APP
+release: python manage.py migrate --noinput
+
 
 
 
