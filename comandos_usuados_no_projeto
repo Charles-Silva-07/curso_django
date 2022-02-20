@@ -137,6 +137,11 @@ CRIAR SUPER USUARIO = mng createsuperuser charlleshp@hotmail.com
 PARA PODER HEROKU RODAR NOSSA APP
 release: python manage.py migrate --noinput
 
+CRIAR SUPER USUARIO NO HEROKU: heroku run -a django-0147 python manage.py createsuperuser
+
+
+
+
 
 
 
