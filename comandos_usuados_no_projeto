@@ -147,6 +147,8 @@ COMANDO = heroku pg:backups:schedule DATABASE_URL --at "02:00 America/Sao_Paulo"
 
 DJANGO DEBUG TOOLBAR
 
+INSTALADO O SENTRY-SDK COMANDO = pipenv install sentry-sdk
+
 
 
 
