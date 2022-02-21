@@ -146,7 +146,6 @@ AGENDAMENTO DE BACKUPs NO HEROKU
 
 COMANDO = heroku pg:backups:schedule DATABASE_URL --at '02:00 America/Sao_Paulo' -a django-0147
 
-vamos nessa
 
 
 
