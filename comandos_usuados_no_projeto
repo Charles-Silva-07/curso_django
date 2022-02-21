@@ -149,6 +149,7 @@ DJANGO DEBUG TOOLBAR
 
 INSTALADO O SENTRY-SDK COMANDO = pipenv install sentry-sdk
 
+Criamos a tag git do templarte-basico
 
 
 
