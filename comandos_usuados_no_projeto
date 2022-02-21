@@ -125,13 +125,11 @@ GERAR AS MIGRAÇÕES
 
 COMANDO = mng makemigrations base
 
-VERIFICAR AS MIGRAÇÕES
+VERIFICAR AS MIGRAÇÕES COMANDO = mng showmigrations
 
-COMANDO = mng showmigrations
+APLICAR AS MIGRAÇÕES PARA O BANCO DE DADOS COMANDO = mng migrate
 
-CONEXÃO COM O BANCO DE DADOS
 
-mng migrate
 CRIAR SUPER USUARIO = mng createsuperuser charlleshp@hotmail.com
 
 PARA PODER HEROKU RODAR NOSSA APP
@@ -144,7 +142,7 @@ CODECOV_TOKEN: 'e9e64690-7443-4174-b56e-23b4137376a1'
 
 AGENDAMENTO DE BACKUPs NO HEROKU
 
-COMANDO = heroku pg:backups:schedule DATABASE_URL --at '02:00 America/Sao_Paulo' -a django-0147
+COMANDO = heroku pg:backups:schedule DATABASE_URL --at "02:00 America/Sao_Paulo" -a django-0147
 
 
 DJANGO DEBUG TOOLBAR
