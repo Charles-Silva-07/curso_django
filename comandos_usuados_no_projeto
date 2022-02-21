@@ -140,7 +140,7 @@ release: python manage.py migrate --noinput
 CRIAR SUPER USUARIO NO HEROKU: heroku run -a django-0147 python manage.py createsuperuser
 
 
-
+CODECOV_TOKEN: 'e9e64690-7443-4174-b56e-23b4137376a1'
 
 
 

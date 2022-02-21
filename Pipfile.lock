@@ -97,9 +97,7 @@
             "version": "==0.4.4"
         },
         "coverage": {
-            "extras": [
-                "toml"
-            ],
+            "extras": [],
             "hashes": [
                 "sha256:1245ab82e8554fa88c4b2ab1e098ae051faac5af829efdcf2ce6b34dccd5567c",
                 "sha256:1bc6d709939ff262fd1432f03f080c5042dc6508b6e0d3d20e61dd045456a1a0",
@@ -513,9 +511,7 @@
             "version": "==0.4.4"
         },
         "coverage": {
-            "extras": [
-                "toml"
-            ],
+            "extras": [],
             "hashes": [
                 "sha256:1245ab82e8554fa88c4b2ab1e098ae051faac5af829efdcf2ce6b34dccd5567c",
                 "sha256:1bc6d709939ff262fd1432f03f080c5042dc6508b6e0d3d20e61dd045456a1a0",
