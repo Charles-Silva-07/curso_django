@@ -142,6 +142,13 @@ CRIAR SUPER USUARIO NO HEROKU: heroku run -a django-0147 python manage.py create
 
 CODECOV_TOKEN: 'e9e64690-7443-4174-b56e-23b4137376a1'
 
+AGENDAMENTO DE BACKUPs NO HEROKU
+
+COMANDO = heroku pg:backups:schedule DATABASE_URL --at '02:00 America/Sao_Paulo' -a django-0147
+
+vamos nessa
+
+
 
 
 
