@@ -155,3 +155,5 @@ Criamos a tag git do templarte-basico
 template static {% load static %}
 
 teste no titulo ok
+
+realizado teste no titulo
