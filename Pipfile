@@ -19,6 +19,7 @@ django-s3-folder-storage = "*"
 collectfast = "*"
 psycopg2 = "*"
 sentry-sdk = "*"
+django-debug-toolbar = "*"
 load = "*"
 static = "*"
 

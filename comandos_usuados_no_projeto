@@ -145,7 +145,7 @@ AGENDAMENTO DE BACKUPs NO HEROKU
 COMANDO = heroku pg:backups:schedule DATABASE_URL --at "02:00 America/Sao_Paulo" -a django-0147
 
 
-DJANGO DEBUG TOOLBAR
+DJANGO DEBUG TOOLBAR = pipenv install django-debug-toolbar
 
 INSTALADO O SENTRY-SDK COMANDO = pipenv install sentry-sdk
 
