@@ -152,17 +152,3 @@ INSTALADO O SENTRY-SDK COMANDO = pipenv install sentry-sdk
 template static {% load static %}
 
 teste no titulo ok
-
-
-
-
-
-
-
-
-
-
-
-
-
-
