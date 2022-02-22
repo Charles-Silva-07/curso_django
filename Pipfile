@@ -19,6 +19,8 @@ django-s3-folder-storage = "*"
 collectfast = "*"
 psycopg2 = "*"
 sentry-sdk = "*"
+load = "*"
+static = "*"
 
 [dev-packages]
 flake8 = "*"
