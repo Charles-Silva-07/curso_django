@@ -104,6 +104,14 @@ heroku config -a django-0147
 
 heroku config:set -a django-0147
 
+FAZER COLETA DE ARQUIVOS STATICOS = mng collectstatic
+
+INSTALAR O DJANGO S3 = pipenv install django-s3-folder-storage
+
+DEPOIS QUE CONCLUIR= mng collectstatic --no-input " o --no-input e para que ele não pergunte se quer fazer o upload dos
+arquivos"
+
+
 DESABILITAMOS O DISABLE_COLLECTSTATIC NO HEROKU
 
 comando = heroku config -a django-0147 DISABLE_COLLECTSTATIC
