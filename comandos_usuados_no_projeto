@@ -122,6 +122,33 @@ heroku config:set -a django-0147 AWS_ACCESS_KEY_ID=AKIASUGGP7B5K7EVDOVV
 heroku config:set -a django-0147 AWS_SECRET_ACCESS_KEY=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
 heroku config:set -a django-0147 AWS_STORAGE_BUCKET_NAME=cursodjango1
 
+meu arn amazon = arn:aws:s3:::cursodjango1
+
+user arn = arn:aws:iam::180804909178:user/cursopython
+
+meu generation policy =
+
+{
+  "Id": "Policy1645793403817",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1645793381917",
+      "Action": "s3:*",
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::cursodjango1",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::180804909178:user/cursopython"
+        ]
+      }
+    }
+  ]
+}
+
+
+
+
 Enviamos a coleta statica
 
 mng collectstatic --no-input
@@ -141,7 +168,7 @@ APLICAR AS MIGRAÇÕES PARA O BANCO DE DADOS COMANDO = mng migrate
 CRIAR SUPER USUARIO = mng createsuperuser charlleshp@hotmail.com
 
 PARA PODER HEROKU RODAR NOSSA APP
-release: python manage.py migrate --noinput
+release: python manage.py migrate --no-input
 
 CRIAR SUPER USUARIO NO HEROKU: heroku run -a django-0147 python manage.py createsuperuser
 
@@ -167,3 +194,6 @@ teste no titulo ok
 realizado teste no titulo
 
 inserido imagen do Luciano
+
+mailchinp
+charles_silva_0147
