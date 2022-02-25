@@ -100,9 +100,11 @@ serve para enviar via terminal para o heroku
 
 Primeiro forc push
 
-heroku config -a django-0147
+heroku config: -a django-0147
 
 heroku config:set -a django-0147
+
+SERVER PARA SUBIR SO OS ARQUIVOS QUE FORAM ALTERADOS AGILIZANDO ASSIM NO DEPLOY = PIPENV INSTALL COLLECTFAST
 
 FAZER COLETA DE ARQUIVOS STATICOS = mng collectstatic
 
@@ -114,7 +116,7 @@ arquivos"
 
 DESABILITAMOS O DISABLE_COLLECTSTATIC NO HEROKU
 
-comando = heroku config -a django-0147 DISABLE_COLLECTSTATIC
+comando = heroku config:unset -a django-0147 DISABLE_COLLECTSTATIC
 
 importamos para o heroku as chaves de segurança do aws que se encontra no .env
 
@@ -148,6 +150,9 @@ meu generation policy =
 
 
 
+
+DEBUG = config('DEBUG', cast=bool)
+MEDIA_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/'
 
 Enviamos a coleta statica
 

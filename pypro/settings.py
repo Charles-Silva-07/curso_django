@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 AUTH_USER_MODEL = 'base.User'
@@ -76,7 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pypro.wsgi.application'
 
-INTERNAL_IPS=config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
 #Configurado Django Debug Tollbar
 
 if DEBUG:
@@ -171,7 +171,7 @@ if AWS_ACCESS_KEY_ID:
     DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
     DEFAULT_S3_PATH = 'media'
     MEDIA_ROOT = f'/{DEFAULT_S3_PATH}/'
-    MEDIA_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/'
+    MEDIA_URL = f'//amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/'
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
