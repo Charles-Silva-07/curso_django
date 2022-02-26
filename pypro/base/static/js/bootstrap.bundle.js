@@ -4385,6 +4385,41 @@
         } // Disable Popper.js if we have a static display
 
       };
+      var showEvent = $.Event(Event$4.SHOW, relatedTarget);
+
+      var parent = Dropdown._getParentFromElement(this._element);
+
+      $(parent).trigger(showEvent);
+
+      if (showEvent.isDefaultPrevented()) {
+        return;
+      }
+
+      $(this._menu).toggleClass(ClassName$4.SHOW);
+      $(parent).toggleClass(ClassName$4.SHOW).trigger($.Event(Event$4.SHOWN, relatedTarget));
+    };
+
+    _proto.hide = function hide() {
+      if (this._element.disabled || $(this._element).hasClass(ClassName$4.DISABLED) || !$(this._menu).hasClass(ClassName$4.SHOW)) {
+        return;
+      }
+
+      var relatedTarget = {
+        relatedTarget: this._element
+      };
+      var hideEvent = $.Event(Event$4.HIDE, relatedTarget);
+
+      var parent = Dropdown._getParentFromElement(this._element);
+
+      $(parent).trigger(hideEvent);
+
+      if (hideEvent.isDefaultPrevented()) {
+        return;
+      }
+
+      $(this._menu).toggleClass(ClassName$4.SHOW);
+      $(parent).toggleClass(ClassName$4.SHOW).trigger($.Event(Event$4.HIDDEN, relatedTarget));
+    };
 
       if (this._config.display === 'static') {
         popperConfig.modifiers.applyStyle = {
@@ -4430,7 +4465,7 @@
         var context = $(toggles[i]).data(DATA_KEY$4);
         var relatedTarget = {
           relatedTarget: toggles[i]
-        };
+      };
 
         if (event && event.type === 'click') {
           relatedTarget.clickEvent = event;
@@ -4967,10 +5002,10 @@
         var callbackRemove = function callbackRemove() {
           _this8._removeBackdrop();
 
-          if (callback) {
-            callback();
-          }
-        };
+        if (callback) {
+          callback();
+        }
+      };
 
         if ($(this._element).hasClass(ClassName$5.FADE)) {
           var _backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop);
@@ -5316,8 +5351,8 @@
         if ($(this.getTipElement()).hasClass(ClassName$6.SHOW)) {
           this._leave(null, this);
 
-          return;
-        }
+        return;
+      }
 
         this._enter(null, this);
       }
@@ -6102,6 +6137,7 @@
       this._process();
     } // Getters
 
+      var $link = $([].slice.call(document.querySelectorAll(queries.join(','))));
 
     var _proto = ScrollSpy.prototype;
 
@@ -6213,7 +6249,7 @@
       if (this._activeTarget && scrollTop < this._offsets[0] && this._offsets[0] > 0) {
         this._activeTarget = null;
 
-        this._clear();
+      this._clear();
 
         return;
       }
