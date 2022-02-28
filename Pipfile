@@ -18,10 +18,10 @@ django-s3-folder-storage = "*"
 collectfast = "*"
 psycopg2 = "*"
 sentry-sdk = "*"
-django-debug-toolbar = "*"
 load = "*"
 static = "*"
 django = "==3.2"
+django-debug-toolbar = "*"
 
 [dev-packages]
 flake8 = "*"
