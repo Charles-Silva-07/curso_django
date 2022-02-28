@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
 pytest = "*"
 gunicorn = "*"
 codecov = "*"
@@ -22,6 +21,7 @@ sentry-sdk = "*"
 django-debug-toolbar = "*"
 load = "*"
 static = "*"
+django = "==3.2"
 
 [dev-packages]
 flake8 = "*"
