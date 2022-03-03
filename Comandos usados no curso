@@ -1,3 +1,12 @@
 Curso Python Pro
 
 name
+
+pipenv install django-s3-folder-storage
+
+ENVIAR UPLOAD DE ARQUIVOS SEM PERGUNTAR DEVIDO O NO-INPUT = mng collectstatic --no-input
+
+SETAR AS CONFIGURAÇÕES NO HEROKU DO AWS=  heroku config:set -a django-0147
+
+FOI USADA EM AULAS ANTERIORES PARA EVIAR A COLETA DE AQUVOS STATIC AGOAR
+VAOMOS DESABILITAR = heroku config:unset -a django-0147 DISABLE_COLLECTSTATIC
