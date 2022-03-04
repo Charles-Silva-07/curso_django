@@ -20,8 +20,9 @@ psycopg2 = "*"
 sentry-sdk = "*"
 load = "*"
 static = "*"
-django = "==3.2"
 django-debug-toolbar = "*"
+django = "*"
+sync = "*"
 
 [dev-packages]
 flake8 = "*"

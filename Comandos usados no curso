@@ -11,3 +11,8 @@ SETAR AS CONFIGURAÇÕES NO HEROKU DO AWS=  heroku config:set -a django-0147
 
 FOI USADA EM AULAS ANTERIORES PARA EVIAR A COLETA DE AQUVOS STATIC AGOAR
 VAOMOS DESABILITAR = heroku config:unset -a django-0147 DISABLE_COLLECTSTATIC
+
+pipenv update = atualiza as dependencias
+pipenv sync
+pipenv install
+

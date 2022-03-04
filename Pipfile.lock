@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "eb766bd81729ec939d25bf735b9047a3c46b7fa55e3c7c368bcbb396111bb6bc"
+            "sha256": "332533e2d0348bfab52cb5f4860ddd67d342bdfdc0b506adb2995667c3eae081"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -42,19 +42,19 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:75709628320cea8ce137975dc33b75213c2e4f6e7cd09e55290de7245e2c79e2",
-                "sha256:c92ec20a670721b5a1bc013b305a84db2b7f9c716653b3056ce7e2fbd2a180ef"
+                "sha256:16fae86d0c4993fd5112128bb4622a879f02363bccd045153cc0bbd7722cc9a5",
+                "sha256:e17d994d222162dac02ec32fde6ae910d819ebf239a94dddcee47def2c82b9c9"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==1.21.12"
+            "version": "==1.21.13"
         },
         "botocore": {
             "hashes": [
-                "sha256:0174999a04b0a2e42457106093ace9b36fa94772a442d9bcf60750263d1d073e",
-                "sha256:0cd7395311a3fef4aad8df8f511b4f7d221c24ae30934bd5c03458b0fc096d0c"
+                "sha256:46e51f56f1c5784e4245e036503635fa71b722775657b6e1acf21ec5b906974c",
+                "sha256:7b166096f9413b41caf7cc6f4edfd5b3c3ab9d7c61eb120a649e69485c98131a"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==1.24.12"
+            "version": "==1.24.13"
         },
         "certifi": {
             "hashes": [
@@ -163,11 +163,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:0604e84c4fb698a5e53e5857b5aea945b2f19a18f25f10b8748dbdf935788927",
-                "sha256:21f0f9643722675976004eb683c55d33c05486f94506672df3d6a141546f389d"
+                "sha256:1239218849e922033a35d2a2f777cb8bee18bd725416744074f455f34ff50d0c",
+                "sha256:77ff2e7050e3324c9b67e29b6707754566f58514112a9ac73310f60cd5261930"
             ],
             "index": "pypi",
-            "version": "==3.2"
+            "version": "==4.0.3"
         },
         "django-debug-toolbar": {
             "hashes": [
@@ -403,13 +403,6 @@
             "index": "pypi",
             "version": "==3.6"
         },
-        "pytz": {
-            "hashes": [
-                "sha256:3672058bc3453457b622aab7a1c3bfd5ab0bdae451512f6cf25f64ed37f5b87c",
-                "sha256:acad2d8b20a1af07d4e4c9d2e9285c5ed9104354062f275f3fcd88dcef4f1326"
-            ],
-            "version": "==2021.3"
-        },
         "requests": {
             "hashes": [
                 "sha256:68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61",
@@ -434,14 +427,6 @@
             "index": "pypi",
             "version": "==1.5.6"
         },
-        "setuptools": {
-            "hashes": [
-                "sha256:2347b2b432c891a863acadca2da9ac101eae6169b1d3dfee2ec605ecd50dbfe5",
-                "sha256:e4f30b9f84e5ab3decf945113119649fec09c1fc3507c6ebffec75646c56e62b"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==60.9.3"
-        },
         "six": {
             "hashes": [
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
@@ -465,6 +450,13 @@
             "index": "pypi",
             "version": "==1.1.1"
         },
+        "sync": {
+            "hashes": [
+                "sha256:9f8e9a5c89dec5e82efaa2ae64a8c6f63690a3c4f4d5f0f84660202306ea078e"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
+        },
         "tomli": {
             "hashes": [
                 "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
@@ -480,6 +472,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==4.1.1"
+        },
+        "tzdata": {
+            "hashes": [
+                "sha256:3eee491e22ebfe1e5cfcc97a4137cd70f092ce59144d81f8924a844de05ba8f5",
+                "sha256:68dbe41afd01b867894bbdfd54fa03f468cfa4f0086bfb4adcd8de8f24f3ee21"
+            ],
+            "markers": "sys_platform == 'win32'",
+            "version": "==2021.5"
         },
         "urllib3": {
             "hashes": [
