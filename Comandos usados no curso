@@ -14,4 +14,5 @@ VAOMOS DESABILITAR = heroku config:unset -a django-0147 DISABLE_COLLECTSTATIC
 
 pipenv update = atualiza as dependencias
 pipenv sync
+pipenv install
 
