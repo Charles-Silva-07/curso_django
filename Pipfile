@@ -22,6 +22,7 @@ load = "*"
 static = "*"
 django-debug-toolbar = "*"
 django = "*"
+sync = "*"
 
 [dev-packages]
 flake8 = "*"
