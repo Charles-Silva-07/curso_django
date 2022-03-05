@@ -13,6 +13,6 @@ FOI USADA EM AULAS ANTERIORES PARA EVIAR A COLETA DE AQUVOS STATIC AGOAR
 VAOMOS DESABILITAR = heroku config:unset -a django-0147 DISABLE_COLLECTSTATIC
 
 pipenv update = atualiza as dependencias
-pipenv sync
-pipenv install
-
+pipenv sync = gera as dependencias de desenvolvimento do pipfilelock
+pipenv install =
+pipen uninstall =
