@@ -16,3 +16,6 @@ pipenv update = atualiza as dependencias
 pipenv sync = gera as dependencias de desenvolvimento do pipfilelock
 pipenv install =
 pipen uninstall =
+
+BANCO DE DADOS
+* Instalação de Postgres com Docker

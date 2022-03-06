@@ -22,4 +22,4 @@ def test_home_link(resp):
 
 
 def test_email_link(resp):
-    assert_contains(resp, f'href="mailto:ramalho@python.pro.br"')
+    assert_contains(resp, 'href="mailto:ramalho@python.pro.br"')
