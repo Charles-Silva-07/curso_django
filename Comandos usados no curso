@@ -19,3 +19,30 @@ pipen uninstall =
 
 BANCO DE DADOS
 * Instalação de Postgres com Docker
+
+docker --help = Verificar comandos do docker
+
+PARA RODAR
+cd PycharmProjects/curso-django
+dentro da pasta do projeto roda
+docker-compose up
+
+
+#version: '3.8'
+#
+#services:
+#
+#  db:
+#    image: postgres
+#    container_name: testedb
+#    ports:
+#      - "5434:5432"
+#    tty: true
+#    volumes:
+#      - .docker/.pgdata:/var/lib/postgresql/data
+#    environment:
+#      - POSTGRES_DB=testedb
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=postgres
+#      - POSTGRES_HOST=localhost
+
