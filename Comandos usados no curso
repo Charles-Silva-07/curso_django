@@ -17,6 +17,8 @@ pipenv sync = gera as dependencias de desenvolvimento do pipfilelock
 pipenv install =
 pipen uninstall =
 
+#682256411
+
 BANCO DE DADOS
 * Instalação de Postgres com Docker
 
@@ -45,4 +47,6 @@ docker-compose up
 #      - POSTGRES_USER=postgres
 #      - POSTGRES_PASSWORD=postgres
 #      - POSTGRES_HOST=localhost
+
+mng changepassword
 
