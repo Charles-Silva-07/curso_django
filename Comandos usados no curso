@@ -48,3 +48,5 @@ docker-compose up
 #      - POSTGRES_PASSWORD=postgres
 #      - POSTGRES_HOST=localhost
 
+mng changepassword
+
