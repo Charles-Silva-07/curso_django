@@ -1,9 +1,9 @@
 import pytest
 from django.urls import reverse
+from model_mommy import mommy
+
 from pypro.aperitivos.models import Video
 from pypro.django_assertions import assert_contains
-from model_mommy import mommy
-from model_bakery import baker
 
 
 @pytest.fixture
@@ -33,6 +33,5 @@ def test_titulo_video(resp, video):
     assert_contains(resp, video.titulo)
 
 
-def test_conteudo_video(resp):
-    assert_contains(resp, '<iframe src="https://player.vimeo.com/video/682256411?h=e0f0e0c5ca&amp;badge=0&amp'
-                          ';autopause=0&amp;player_id=0&amp;app_id=58479"')
+def test_conteudo_video(resp, video):
+    assert_contains(resp, f'<iframe src="https://player.vimeo.com/video/{video.vimeo_id}"')
