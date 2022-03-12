@@ -49,4 +49,5 @@ docker-compose up
 #      - POSTGRES_HOST=localhost
 
 mng changepassword
+pipenv shell ativa o ambiente virtual
 
