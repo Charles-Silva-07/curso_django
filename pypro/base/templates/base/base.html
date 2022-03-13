@@ -39,9 +39,10 @@
                         Módulos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Python bids</a>
+                        {% for modulo in MODULOS %}
+                        <a class="dropdown-item" href="#">{{modulo.titulo}}</a>
                         <div class="dropdown-divider"></div>
-
+                        {% endfor %}
                     </div>
                 </li>
 
