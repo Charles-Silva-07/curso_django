@@ -50,4 +50,5 @@ docker-compose up
 
 mng changepassword
 pipenv shell ativa o ambiente virtual
+python manage.py createsuperuser
 
