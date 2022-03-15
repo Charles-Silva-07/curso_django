@@ -6,4 +6,4 @@ from pypro.modulos.models import Modulo
 
 @admin.register(Modulo)
 class ModuloAdmin(OrderedModelAdmin):
-    list_display = ('titulo', 'publico')
+    list_display = ('titulo', 'publico', 'move_up_down_links')
