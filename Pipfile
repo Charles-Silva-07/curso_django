@@ -19,6 +19,7 @@ sentry-sdk = "*"
 django-debug-toolbar = "*"
 django = "*"
 django-ordered-model = "*"
+reverse = "*"
 
 [dev-packages]
 flake8 = "*"
