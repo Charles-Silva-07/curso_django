@@ -52,4 +52,5 @@ mng changepassword
 pipenv shell ativa o ambiente virtual
 python manage.py createsuperuser
 Reaproveitando Apps de Terceiros ok
+python manage.py migrate
 
