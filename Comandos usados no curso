@@ -54,3 +54,5 @@ python manage.py createsuperuser
 Reaproveitando Apps de Terceiros ok
 python manage.py migrate
 python
+
+CRIAR CHAVE SSH ssh-keygen -t rsa
