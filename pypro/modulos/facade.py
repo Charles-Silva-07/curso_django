@@ -13,5 +13,5 @@ def encontrar_modulo(slug: str) -> Modulo:
     return Modulo.objects.get(slug=slug)
 
 
-def listar_aulas_de_modulo_ordenados(modulo:Modulo):
+def listar_aulas_de_modulo_ordenados(modulo: Modulo):
     return list(modulo.aula_set.order_by('order').all())

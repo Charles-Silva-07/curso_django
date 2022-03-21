@@ -16,30 +16,3 @@ class AulaAdmin(OrderedModelAdmin):
     list_filter = ('modulo',)
     ordering = ('modulo', 'order')
     prepopulated_fields = {'slug': ('titulo',)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
