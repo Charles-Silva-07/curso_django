@@ -20,12 +20,13 @@ django-debug-toolbar = "*"
 django = "*"
 django-ordered-model = "*"
 reverse = "*"
+ipython = "*"
+django-extensions = "*"
 
 [dev-packages]
 flake8 = "*"
 pytest-cov = "*"
 codecov = "*"
-model-mommy = "*"
 model-bakery = "*"
 
 [requires]
