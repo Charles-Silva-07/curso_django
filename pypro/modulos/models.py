@@ -12,10 +12,6 @@ class Modulo(OrderedModel):
     class Meta(OrderedModel.Meta):
         pass
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(args, kwargs)
-        self.aula_set = None
-
     def __str__(self):
         return self.titulo
 
@@ -28,6 +24,7 @@ class Aula(OrderedModel):
     slug = models.SlugField(unique=True)
     modulo = models.ForeignKey('Modulo', on_delete=models.PROTECT)
     order_with_respect_to = 'modulo'
+    vimeo_id = models.CharField(max_length=32,)
 
     class Meta(OrderedModel.Meta):
         pass
