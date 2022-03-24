@@ -56,3 +56,4 @@ python manage.py migrate
 python
 
 CRIAR CHAVE SSH ssh-keygen -t rsa
+ok
