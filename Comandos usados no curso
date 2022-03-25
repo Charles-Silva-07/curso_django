@@ -57,3 +57,9 @@ python
 
 CRIAR CHAVE SSH ssh-keygen -t rsa
 ok
+
+CRIAÇÃO DE TURMAS
+
+1 entra na pasta raiz do projeto com cd pypro
+2 mng startapp turmas CRIA A APP TURMAS
+3
