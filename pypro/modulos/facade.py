@@ -1,5 +1,6 @@
 from typing import List
 from pypro.modulos.models import Modulo, Aula
+from django.db.models.query import Prefetch
 
 
 def listar_modulos_ordenados() -> List[Modulo]:
@@ -22,4 +23,6 @@ def encontrar_aula(slug):
 
 
 def listar_modulos_com_aulas():
-    return Modulo.objects.order_by('order').prefetch_related('aula_set').all()
+    aulas_ordenadas = Aula.objects.order_by('order')
+    return Modulo.objects.order_by('order').prefetch_related(
+        Prefetch('aula_set', queryset=aulas_ordenadas, to_attr='aulas')).all()
