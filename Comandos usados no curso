@@ -63,3 +63,12 @@ CRIAÇÃO DE TURMAS
 1 entra na pasta raiz do projeto com cd pypro
 2 mng startapp turmas CRIA A APP TURMAS
 3
+
+
+REVERTER MIGRAÇÕES NO BANCO
+
+obs SO PODE FAZER E REVERSÃO SE AS ALTERAÇÕES NÃO FOI PARA A BRANCH MASTER.
+
+mng migrate o nome da app e o prefixo da miração para qual quer retornar
+
+Ex: mng migrate turmas 0001
