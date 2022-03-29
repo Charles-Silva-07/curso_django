@@ -45,4 +45,3 @@ def test_botao_entrar_disponivel(resp_home):
 
 def test_link_de_login_disponivel(resp_home):
     assert_contains(resp_home, reverse('login'))
-
