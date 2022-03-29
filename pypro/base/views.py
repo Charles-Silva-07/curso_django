@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'base/login.html', {})
+    return render(request, 'registration/login.html', {})
