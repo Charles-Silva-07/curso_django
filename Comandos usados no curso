@@ -1,6 +1,8 @@
 Curso Python Pro
 pip
 
+python manage.py createsuperuser
+
 name
 
 pipenv install django-s3-folder-storage
