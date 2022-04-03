@@ -74,3 +74,9 @@ obs SO PODE FAZER E REVERSÃO SE AS ALTERAÇÕES NÃO FOI PARA A BRANCH MASTER.
 mng migrate o nome da app e o prefixo da miração para qual quer retornar
 
 Ex: mng migrate turmas 0001
+
+heroku addons:create sendgrid:starter -a django0147
+heroku config:get SENDGRID_USERNAME -a django0147
+heroku config:get SENDGRID_PASSWORD -a django0147
+
+mng makemigrate base   vai força a migração
